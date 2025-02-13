@@ -9,6 +9,7 @@ def test_greeting():
     age = 25
     # TODO Сформируйте нужную строку
     output = f"Привет, {name}! Тебе {age} лет."
+    print(f"\n{output}")
 
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
@@ -48,6 +49,8 @@ def test_circle():
 
     assert length == 144.51326206513048
 
+    print(f"\nДля круга, с радиусом {r=} длина равна {length}, а площадь равна {area}")
+
 
 def test_random_list():
     """
@@ -56,7 +59,7 @@ def test_random_list():
     # TODO создайте список
     l = []
     for i in range(0, 10):
-        l.append(random.randint(0, 101))
+        l.append(random.randint(0, 100))
 
     l = sorted(l)
 
